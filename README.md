@@ -7,10 +7,10 @@
 * [프로젝트 규칙](#프로젝트-규칙) 
 * [기능](#기능)
 * [Trouble Shooting](#trouble-shooting)
-* [학습한 내용](#학습한-내용)
+* [학습 내용](#학습-내용)
 
 
-## 프로젝트 규칙 ‼️
+## 프로젝트 규칙
 
 팀원 : [Yepark](https://github.com/poisonF2), [llim](https://github.com/lina0322), [kchoi](https://github.com/choikanghun), [태태](https://github.com/uuu1101)  
 
@@ -21,8 +21,8 @@
 Git Commit 컨벤션 : issue 번호 + Git Karma 
 > 예시) [#4]feat: commit Messsage 
 
-## 기능 🚀
+## 기능
 
-## Trouble Shooting ☠️
+## Trouble Shooting
 
-## 학습 내용 🏆
+## 학습 내용
