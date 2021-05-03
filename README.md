@@ -26,6 +26,9 @@
 
 - 📏 코딩 컨벤션 : SwiftLint를 사용
 
+- 🪃 Git branch 규칙: 기능의 메인브랜치에 merge, 개인브랜치에 작업 후 메인되는 브랜치에 Pull Request
+> 예시) gps(메인브랜치), gps-taetae(개인브랜치)
+
 -  📐 Git Commit 컨벤션
 issue 번호 + Git Karma 
 > 예시) [#4]feat: commit Messsage 
@@ -42,8 +45,6 @@ docs: 문서파일 추가 및 수정
 chore: 기타업무  
 ```
 
-- 🪃 Git branch 규칙: 기능의 메인브랜치에 merge, 개인브랜치에 작업 후 메인되는 브랜치에 Pull Request
-> 예시) gps(메인브랜치), gps-taetae(개인브랜치)
 
 ## 기능
 
