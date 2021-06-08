@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CCDC1F718E62259DB163B69 /* Pods_sparta42_iOS_sparta42_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5FAC1D44BE00EF95FFE5D /* Pods_sparta42_iOS_sparta42_iOSUITests.framework */; };
+		7A7EAD19266F419E0087DC28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD18266F419E0087DC28 /* AppDelegate.swift */; };
+		7A7EAD1B266F419E0087DC28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD1A266F419E0087DC28 /* SceneDelegate.swift */; };
+		7A7EAD20266F419E0087DC28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7EAD1E266F419E0087DC28 /* Main.storyboard */; };
+		7A7EAD22266F419E0087DC28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7EAD21266F419E0087DC28 /* Assets.xcassets */; };
+		7A7EAD25266F419F0087DC28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7EAD23266F419F0087DC28 /* LaunchScreen.storyboard */; };
+		7A7EAD30266F419F0087DC28 /* sparta42_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD2F266F419F0087DC28 /* sparta42_iOSTests.swift */; };
+		7A7EAD3B266F419F0087DC28 /* sparta42_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD3A266F419F0087DC28 /* sparta42_iOSUITests.swift */; };
+		7A7EAD4B266F422A0087DC28 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD4A266F422A0087DC28 /* SignUpViewController.swift */; };
+		7A7EAD4D266F43F90087DC28 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD4C266F43F90087DC28 /* Auth.swift */; };
+		7A7EAD4F266F44E20087DC28 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD4E266F44E20087DC28 /* User.swift */; };
+		7A7EAD51266FB0C80087DC28 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD50266FB0C80087DC28 /* SignInViewController.swift */; };
+		7A7EAD54266FB2F70087DC28 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD53266FB2F70087DC28 /* AlertService.swift */; };
+		7A7EAD57266FBF6F0087DC28 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD56266FBF6F0087DC28 /* AuthResponse.swift */; };
+		9FAF9B7B7D5DFB529BDAAEE8 /* Pods_sparta42_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83317B442193652A0238AB0D /* Pods_sparta42_iOS.framework */; };
+		E99A7A7C3060028F94F35125 /* Pods_sparta42_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122799C29213479517276F0D /* Pods_sparta42_iOSTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A7EAD2C266F419F0087DC28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A7EAD0D266F419D0087DC28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A7EAD14266F419D0087DC28;
+			remoteInfo = sparta42_iOS;
+		};
+		7A7EAD37266F419F0087DC28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A7EAD0D266F419D0087DC28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A7EAD14266F419D0087DC28;
+			remoteInfo = sparta42_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		122799C29213479517276F0D /* Pods_sparta42_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparta42_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B31E86D62C3FC10F9B676F /* Pods-sparta42_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOS.release.xcconfig"; path = "Target Support Files/Pods-sparta42_iOS/Pods-sparta42_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		592DE4CEDFAA7A5E73BB6308 /* Pods-sparta42_iOS-sparta42_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOS-sparta42_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-sparta42_iOS-sparta42_iOSUITests/Pods-sparta42_iOS-sparta42_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A8872258B753843944CD050 /* Pods-sparta42_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-sparta42_iOSTests/Pods-sparta42_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		777453744C52B56F7593D809 /* Pods-sparta42_iOS-sparta42_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOS-sparta42_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-sparta42_iOS-sparta42_iOSUITests/Pods-sparta42_iOS-sparta42_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7A7EAD15266F419E0087DC28 /* sparta42_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparta42_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A7EAD18266F419E0087DC28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A7EAD1A266F419E0087DC28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7A7EAD1F266F419E0087DC28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A7EAD21266F419E0087DC28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A7EAD24266F419F0087DC28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A7EAD26266F419F0087DC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A7EAD2B266F419F0087DC28 /* sparta42_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sparta42_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A7EAD2F266F419F0087DC28 /* sparta42_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparta42_iOSTests.swift; sourceTree = "<group>"; };
+		7A7EAD31266F419F0087DC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A7EAD36266F419F0087DC28 /* sparta42_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sparta42_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A7EAD3A266F419F0087DC28 /* sparta42_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparta42_iOSUITests.swift; sourceTree = "<group>"; };
+		7A7EAD3C266F419F0087DC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A7EAD4A266F422A0087DC28 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7A7EAD4C266F43F90087DC28 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		7A7EAD4E266F44E20087DC28 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7A7EAD50266FB0C80087DC28 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		7A7EAD53266FB2F70087DC28 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		7A7EAD56266FBF6F0087DC28 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		83317B442193652A0238AB0D /* Pods_sparta42_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparta42_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55CDA7F8750754E8D4F969D /* Pods-sparta42_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOS.debug.xcconfig"; path = "Target Support Files/Pods-sparta42_iOS/Pods-sparta42_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B5FD8B3A581A2DCC930ABAFA /* Pods-sparta42_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-sparta42_iOSTests/Pods-sparta42_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9E5FAC1D44BE00EF95FFE5D /* Pods_sparta42_iOS_sparta42_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparta42_iOS_sparta42_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A7EAD12266F419D0087DC28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FAF9B7B7D5DFB529BDAAEE8 /* Pods_sparta42_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A7EAD28266F419F0087DC28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99A7A7C3060028F94F35125 /* Pods_sparta42_iOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A7EAD33266F419F0087DC28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CCDC1F718E62259DB163B69 /* Pods_sparta42_iOS_sparta42_iOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100260BF92392F691F6B6E52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83317B442193652A0238AB0D /* Pods_sparta42_iOS.framework */,
+				E9E5FAC1D44BE00EF95FFE5D /* Pods_sparta42_iOS_sparta42_iOSUITests.framework */,
+				122799C29213479517276F0D /* Pods_sparta42_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		439C64E52B9FD00DCFDDCB13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B55CDA7F8750754E8D4F969D /* Pods-sparta42_iOS.debug.xcconfig */,
+				52B31E86D62C3FC10F9B676F /* Pods-sparta42_iOS.release.xcconfig */,
+				592DE4CEDFAA7A5E73BB6308 /* Pods-sparta42_iOS-sparta42_iOSUITests.debug.xcconfig */,
+				777453744C52B56F7593D809 /* Pods-sparta42_iOS-sparta42_iOSUITests.release.xcconfig */,
+				B5FD8B3A581A2DCC930ABAFA /* Pods-sparta42_iOSTests.debug.xcconfig */,
+				6A8872258B753843944CD050 /* Pods-sparta42_iOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A7EAD0C266F419D0087DC28 = {
+			isa = PBXGroup;
+			children = (
+				7A7EAD17266F419E0087DC28 /* sparta42_iOS */,
+				7A7EAD2E266F419F0087DC28 /* sparta42_iOSTests */,
+				7A7EAD39266F419F0087DC28 /* sparta42_iOSUITests */,
+				7A7EAD16266F419E0087DC28 /* Products */,
+				439C64E52B9FD00DCFDDCB13 /* Pods */,
+				100260BF92392F691F6B6E52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A7EAD16266F419E0087DC28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A7EAD15266F419E0087DC28 /* sparta42_iOS.app */,
+				7A7EAD2B266F419F0087DC28 /* sparta42_iOSTests.xctest */,
+				7A7EAD36266F419F0087DC28 /* sparta42_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A7EAD17266F419E0087DC28 /* sparta42_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7A7EAD52266FB2EF0087DC28 /* Service */,
+				7A7EAD49266F42160087DC28 /* Views */,
+				7A7EAD48266F41F70087DC28 /* Models */,
+				7A7EAD18266F419E0087DC28 /* AppDelegate.swift */,
+				7A7EAD1A266F419E0087DC28 /* SceneDelegate.swift */,
+				7A7EAD1E266F419E0087DC28 /* Main.storyboard */,
+				7A7EAD21266F419E0087DC28 /* Assets.xcassets */,
+				7A7EAD23266F419F0087DC28 /* LaunchScreen.storyboard */,
+				7A7EAD26266F419F0087DC28 /* Info.plist */,
+			);
+			path = sparta42_iOS;
+			sourceTree = "<group>";
+		};
+		7A7EAD2E266F419F0087DC28 /* sparta42_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A7EAD2F266F419F0087DC28 /* sparta42_iOSTests.swift */,
+				7A7EAD31266F419F0087DC28 /* Info.plist */,
+			);
+			path = sparta42_iOSTests;
+			sourceTree = "<group>";
+		};
+		7A7EAD39266F419F0087DC28 /* sparta42_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A7EAD3A266F419F0087DC28 /* sparta42_iOSUITests.swift */,
+				7A7EAD3C266F419F0087DC28 /* Info.plist */,
+			);
+			path = sparta42_iOSUITests;
+			sourceTree = "<group>";
+		};
+		7A7EAD48266F41F70087DC28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A7EAD4C266F43F90087DC28 /* Auth.swift */,
+				7A7EAD4E266F44E20087DC28 /* User.swift */,
+				7A7EAD56266FBF6F0087DC28 /* AuthResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A7EAD49266F42160087DC28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A7EAD4A266F422A0087DC28 /* SignUpViewController.swift */,
+				7A7EAD50266FB0C80087DC28 /* SignInViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A7EAD52266FB2EF0087DC28 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7A7EAD53266FB2F70087DC28 /* AlertService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A7EAD14266F419D0087DC28 /* sparta42_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A7EAD3F266F419F0087DC28 /* Build configuration list for PBXNativeTarget "sparta42_iOS" */;
+			buildPhases = (
+				4DE80BA965FBC6A1D463EC30 /* [CP] Check Pods Manifest.lock */,
+				7A7EAD11266F419D0087DC28 /* Sources */,
+				7A7EAD12266F419D0087DC28 /* Frameworks */,
+				7A7EAD13266F419D0087DC28 /* Resources */,
+				CB411C68F7305D49D11577E4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sparta42_iOS;
+			productName = sparta42_iOS;
+			productReference = 7A7EAD15266F419E0087DC28 /* sparta42_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A7EAD2A266F419F0087DC28 /* sparta42_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A7EAD42266F419F0087DC28 /* Build configuration list for PBXNativeTarget "sparta42_iOSTests" */;
+			buildPhases = (
+				FAA217593CF525C6628A24E5 /* [CP] Check Pods Manifest.lock */,
+				7A7EAD27266F419F0087DC28 /* Sources */,
+				7A7EAD28266F419F0087DC28 /* Frameworks */,
+				7A7EAD29266F419F0087DC28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A7EAD2D266F419F0087DC28 /* PBXTargetDependency */,
+			);
+			name = sparta42_iOSTests;
+			productName = sparta42_iOSTests;
+			productReference = 7A7EAD2B266F419F0087DC28 /* sparta42_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7A7EAD35266F419F0087DC28 /* sparta42_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A7EAD45266F419F0087DC28 /* Build configuration list for PBXNativeTarget "sparta42_iOSUITests" */;
+			buildPhases = (
+				87ED5F22D045BE557D093FFB /* [CP] Check Pods Manifest.lock */,
+				7A7EAD32266F419F0087DC28 /* Sources */,
+				7A7EAD33266F419F0087DC28 /* Frameworks */,
+				7A7EAD34266F419F0087DC28 /* Resources */,
+				A9C9D3411B0927278C224E77 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A7EAD38266F419F0087DC28 /* PBXTargetDependency */,
+			);
+			name = sparta42_iOSUITests;
+			productName = sparta42_iOSUITests;
+			productReference = 7A7EAD36266F419F0087DC28 /* sparta42_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A7EAD0D266F419D0087DC28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7A7EAD14266F419D0087DC28 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					7A7EAD2A266F419F0087DC28 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 7A7EAD14266F419D0087DC28;
+					};
+					7A7EAD35266F419F0087DC28 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 7A7EAD14266F419D0087DC28;
+					};
+				};
+			};
+			buildConfigurationList = 7A7EAD10266F419D0087DC28 /* Build configuration list for PBXProject "sparta42_iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A7EAD0C266F419D0087DC28;
+			productRefGroup = 7A7EAD16266F419E0087DC28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A7EAD14266F419D0087DC28 /* sparta42_iOS */,
+				7A7EAD2A266F419F0087DC28 /* sparta42_iOSTests */,
+				7A7EAD35266F419F0087DC28 /* sparta42_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A7EAD13266F419D0087DC28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7EAD25266F419F0087DC28 /* LaunchScreen.storyboard in Resources */,
+				7A7EAD22266F419E0087DC28 /* Assets.xcassets in Resources */,
+				7A7EAD20266F419E0087DC28 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A7EAD29266F419F0087DC28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A7EAD34266F419F0087DC28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DE80BA965FBC6A1D463EC30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sparta42_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87ED5F22D045BE557D093FFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sparta42_iOS-sparta42_iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9C9D3411B0927278C224E77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sparta42_iOS-sparta42_iOSUITests/Pods-sparta42_iOS-sparta42_iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sparta42_iOS-sparta42_iOSUITests/Pods-sparta42_iOS-sparta42_iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sparta42_iOS-sparta42_iOSUITests/Pods-sparta42_iOS-sparta42_iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB411C68F7305D49D11577E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sparta42_iOS/Pods-sparta42_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sparta42_iOS/Pods-sparta42_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sparta42_iOS/Pods-sparta42_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAA217593CF525C6628A24E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sparta42_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A7EAD11266F419D0087DC28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7EAD19266F419E0087DC28 /* AppDelegate.swift in Sources */,
+				7A7EAD4F266F44E20087DC28 /* User.swift in Sources */,
+				7A7EAD54266FB2F70087DC28 /* AlertService.swift in Sources */,
+				7A7EAD51266FB0C80087DC28 /* SignInViewController.swift in Sources */,
+				7A7EAD1B266F419E0087DC28 /* SceneDelegate.swift in Sources */,
+				7A7EAD4B266F422A0087DC28 /* SignUpViewController.swift in Sources */,
+				7A7EAD57266FBF6F0087DC28 /* AuthResponse.swift in Sources */,
+				7A7EAD4D266F43F90087DC28 /* Auth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A7EAD27266F419F0087DC28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7EAD30266F419F0087DC28 /* sparta42_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A7EAD32266F419F0087DC28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7EAD3B266F419F0087DC28 /* sparta42_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A7EAD2D266F419F0087DC28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A7EAD14266F419D0087DC28 /* sparta42_iOS */;
+			targetProxy = 7A7EAD2C266F419F0087DC28 /* PBXContainerItemProxy */;
+		};
+		7A7EAD38266F419F0087DC28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A7EAD14266F419D0087DC28 /* sparta42_iOS */;
+			targetProxy = 7A7EAD37266F419F0087DC28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A7EAD1E266F419E0087DC28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A7EAD1F266F419E0087DC28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A7EAD23266F419F0087DC28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A7EAD24266F419F0087DC28 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A7EAD3D266F419F0087DC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A7EAD3E266F419F0087DC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A7EAD40266F419F0087DC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B55CDA7F8750754E8D4F969D /* Pods-sparta42_iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWY286867X;
+				INFOPLIST_FILE = sparta42_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kchoi.sparta42-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A7EAD41266F419F0087DC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B31E86D62C3FC10F9B676F /* Pods-sparta42_iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWY286867X;
+				INFOPLIST_FILE = sparta42_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kchoi.sparta42-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7A7EAD43266F419F0087DC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5FD8B3A581A2DCC930ABAFA /* Pods-sparta42_iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWY286867X;
+				INFOPLIST_FILE = sparta42_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kchoi.sparta42-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparta42_iOS.app/sparta42_iOS";
+			};
+			name = Debug;
+		};
+		7A7EAD44266F419F0087DC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A8872258B753843944CD050 /* Pods-sparta42_iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWY286867X;
+				INFOPLIST_FILE = sparta42_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kchoi.sparta42-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparta42_iOS.app/sparta42_iOS";
+			};
+			name = Release;
+		};
+		7A7EAD46266F419F0087DC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 592DE4CEDFAA7A5E73BB6308 /* Pods-sparta42_iOS-sparta42_iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWY286867X;
+				INFOPLIST_FILE = sparta42_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kchoi.sparta42-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sparta42_iOS;
+			};
+			name = Debug;
+		};
+		7A7EAD47266F419F0087DC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 777453744C52B56F7593D809 /* Pods-sparta42_iOS-sparta42_iOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWY286867X;
+				INFOPLIST_FILE = sparta42_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kchoi.sparta42-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sparta42_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A7EAD10266F419D0087DC28 /* Build configuration list for PBXProject "sparta42_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A7EAD3D266F419F0087DC28 /* Debug */,
+				7A7EAD3E266F419F0087DC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A7EAD3F266F419F0087DC28 /* Build configuration list for PBXNativeTarget "sparta42_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A7EAD40266F419F0087DC28 /* Debug */,
+				7A7EAD41266F419F0087DC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A7EAD42266F419F0087DC28 /* Build configuration list for PBXNativeTarget "sparta42_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A7EAD43266F419F0087DC28 /* Debug */,
+				7A7EAD44266F419F0087DC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A7EAD45266F419F0087DC28 /* Build configuration list for PBXNativeTarget "sparta42_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A7EAD46266F419F0087DC28 /* Debug */,
+				7A7EAD47266F419F0087DC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A7EAD0D266F419D0087DC28 /* Project object */;
+}
