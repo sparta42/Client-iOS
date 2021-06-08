@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0551A73929C5001F21E76F47 /* Pods_42sparta_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34550ABDA2DBE94F07DC02BD /* Pods_42sparta_iosTests.framework */; };
 		4CBF28642637F0E600E50C06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF28632637F0E600E50C06 /* AppDelegate.swift */; };
 		4CBF28662637F0E600E50C06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF28652637F0E600E50C06 /* SceneDelegate.swift */; };
 		4CBF28682637F0E600E50C06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF28672637F0E600E50C06 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		4CBF28702637F0E700E50C06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBF286E2637F0E700E50C06 /* LaunchScreen.storyboard */; };
 		4CBF287B2637F0E700E50C06 /* _2sparta_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF287A2637F0E700E50C06 /* _2sparta_iosTests.swift */; };
 		4CBF28862637F0E800E50C06 /* _2sparta_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF28852637F0E800E50C06 /* _2sparta_iosUITests.swift */; };
+		71B64E882CF8EC9830C1E138 /* Pods_42sparta_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9AFDC47D82616D7B59E907 /* Pods_42sparta_ios.framework */; };
+		907F6A16CF23C37B2C03DE45 /* Pods_42sparta_ios_42sparta_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E82D522A5E34DE011EC5C4C /* Pods_42sparta_ios_42sparta_iosUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1051AB37902115E2FAB44BD2 /* Pods-42sparta_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-42sparta_iosTests.release.xcconfig"; path = "Target Support Files/Pods-42sparta_iosTests/Pods-42sparta_iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		214984F3351849851792E47D /* Pods-42sparta_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-42sparta_ios.debug.xcconfig"; path = "Target Support Files/Pods-42sparta_ios/Pods-42sparta_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		29EFA23B4C2585B32A88E4EA /* Pods-42sparta_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-42sparta_ios.release.xcconfig"; path = "Target Support Files/Pods-42sparta_ios/Pods-42sparta_ios.release.xcconfig"; sourceTree = "<group>"; };
+		34550ABDA2DBE94F07DC02BD /* Pods_42sparta_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_42sparta_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBF28602637F0E600E50C06 /* 42sparta_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 42sparta_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBF28632637F0E600E50C06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CBF28652637F0E600E50C06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		4CBF28812637F0E800E50C06 /* 42sparta_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 42sparta_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBF28852637F0E800E50C06 /* _2sparta_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _2sparta_iosUITests.swift; sourceTree = "<group>"; };
 		4CBF28872637F0E800E50C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E82D522A5E34DE011EC5C4C /* Pods_42sparta_ios_42sparta_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_42sparta_ios_42sparta_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9769D50FF025D4D2BAAE22BC /* Pods-42sparta_ios-42sparta_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-42sparta_ios-42sparta_iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-42sparta_ios-42sparta_iosUITests/Pods-42sparta_ios-42sparta_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A74900F1CF271D341777CBAB /* Pods-42sparta_ios-42sparta_iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-42sparta_ios-42sparta_iosUITests.release.xcconfig"; path = "Target Support Files/Pods-42sparta_ios-42sparta_iosUITests/Pods-42sparta_ios-42sparta_iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B0A5D26E26E72D9E1A9D63CA /* Pods-42sparta_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-42sparta_iosTests.debug.xcconfig"; path = "Target Support Files/Pods-42sparta_iosTests/Pods-42sparta_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE9AFDC47D82616D7B59E907 /* Pods_42sparta_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_42sparta_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B64E882CF8EC9830C1E138 /* Pods_42sparta_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0551A73929C5001F21E76F47 /* Pods_42sparta_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907F6A16CF23C37B2C03DE45 /* Pods_42sparta_ios_42sparta_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				4CBF28792637F0E700E50C06 /* 42sparta_iosTests */,
 				4CBF28842637F0E800E50C06 /* 42sparta_iosUITests */,
 				4CBF28612637F0E600E50C06 /* Products */,
+				656DF8280B67C2E18D207455 /* Pods */,
+				85FD779572883CD7BE78C646 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,30 @@
 			path = 42sparta_iosUITests;
 			sourceTree = "<group>";
 		};
+		656DF8280B67C2E18D207455 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				214984F3351849851792E47D /* Pods-42sparta_ios.debug.xcconfig */,
+				29EFA23B4C2585B32A88E4EA /* Pods-42sparta_ios.release.xcconfig */,
+				9769D50FF025D4D2BAAE22BC /* Pods-42sparta_ios-42sparta_iosUITests.debug.xcconfig */,
+				A74900F1CF271D341777CBAB /* Pods-42sparta_ios-42sparta_iosUITests.release.xcconfig */,
+				B0A5D26E26E72D9E1A9D63CA /* Pods-42sparta_iosTests.debug.xcconfig */,
+				1051AB37902115E2FAB44BD2 /* Pods-42sparta_iosTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		85FD779572883CD7BE78C646 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE9AFDC47D82616D7B59E907 /* Pods_42sparta_ios.framework */,
+				7E82D522A5E34DE011EC5C4C /* Pods_42sparta_ios_42sparta_iosUITests.framework */,
+				34550ABDA2DBE94F07DC02BD /* Pods_42sparta_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CBF288A2637F0E800E50C06 /* Build configuration list for PBXNativeTarget "42sparta_ios" */;
 			buildPhases = (
+				FC50312E0531D51174E61199 /* [CP] Check Pods Manifest.lock */,
 				4CBF285C2637F0E600E50C06 /* Sources */,
 				4CBF285D2637F0E600E50C06 /* Frameworks */,
 				4CBF285E2637F0E600E50C06 /* Resources */,
+				10AEFE934DC7F7F8506D3130 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CBF288D2637F0E800E50C06 /* Build configuration list for PBXNativeTarget "42sparta_iosTests" */;
 			buildPhases = (
+				97E11A0E9B914C36C047A6FA /* [CP] Check Pods Manifest.lock */,
 				4CBF28722637F0E700E50C06 /* Sources */,
 				4CBF28732637F0E700E50C06 /* Frameworks */,
 				4CBF28742637F0E700E50C06 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CBF28902637F0E800E50C06 /* Build configuration list for PBXNativeTarget "42sparta_iosUITests" */;
 			buildPhases = (
+				E89EF1FA530D2EAF47B71DEC /* [CP] Check Pods Manifest.lock */,
 				4CBF287D2637F0E800E50C06 /* Sources */,
 				4CBF287E2637F0E800E50C06 /* Frameworks */,
 				4CBF287F2637F0E800E50C06 /* Resources */,
+				A2357B0E1C091ED86380DA57 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10AEFE934DC7F7F8506D3130 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-42sparta_ios/Pods-42sparta_ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-42sparta_ios/Pods-42sparta_ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-42sparta_ios/Pods-42sparta_ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97E11A0E9B914C36C047A6FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-42sparta_iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2357B0E1C091ED86380DA57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-42sparta_ios-42sparta_iosUITests/Pods-42sparta_ios-42sparta_iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-42sparta_ios-42sparta_iosUITests/Pods-42sparta_ios-42sparta_iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-42sparta_ios-42sparta_iosUITests/Pods-42sparta_ios-42sparta_iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E89EF1FA530D2EAF47B71DEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-42sparta_ios-42sparta_iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC50312E0531D51174E61199 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-42sparta_ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4CBF285C2637F0E600E50C06 /* Sources */ = {
@@ -433,6 +582,7 @@
 		};
 		4CBF288B2637F0E800E50C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 214984F3351849851792E47D /* Pods-42sparta_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +601,7 @@
 		};
 		4CBF288C2637F0E800E50C06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29EFA23B4C2585B32A88E4EA /* Pods-42sparta_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +620,7 @@
 		};
 		4CBF288E2637F0E800E50C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A5D26E26E72D9E1A9D63CA /* Pods-42sparta_iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +642,7 @@
 		};
 		4CBF288F2637F0E800E50C06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1051AB37902115E2FAB44BD2 /* Pods-42sparta_iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +664,7 @@
 		};
 		4CBF28912637F0E800E50C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9769D50FF025D4D2BAAE22BC /* Pods-42sparta_ios-42sparta_iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +684,7 @@
 		};
 		4CBF28922637F0E800E50C06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74900F1CF271D341777CBAB /* Pods-42sparta_ios-42sparta_iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
