@@ -16,7 +16,7 @@ struct AuthRefreshtoken: Codable {
     var refreshToken: String?
 }
 
-struct AuthSignup: Codable {
+struct AuthSignUp: Codable {
     var email: String?
     var name: String?
     var password: String?
