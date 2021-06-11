@@ -19,8 +19,14 @@
 		7A7EAD4D266F43F90087DC28 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD4C266F43F90087DC28 /* Auth.swift */; };
 		7A7EAD4F266F44E20087DC28 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD4E266F44E20087DC28 /* User.swift */; };
 		7A7EAD51266FB0C80087DC28 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD50266FB0C80087DC28 /* SignInViewController.swift */; };
-		7A7EAD54266FB2F70087DC28 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD53266FB2F70087DC28 /* AlertService.swift */; };
 		7A7EAD57266FBF6F0087DC28 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD56266FBF6F0087DC28 /* AuthResponse.swift */; };
+		7A8B35C026734D2E007E4181 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B35BF26734D2E007E4181 /* URL+Extensions.swift */; };
+		7A8B35C226735EF6007E4181 /* UserHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B35C126735EF6007E4181 /* UserHTTPService.swift */; };
+		7A8B35C42673643F007E4181 /* SingletonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B35C32673643F007E4181 /* SingletonService.swift */; };
+		7A8B35C626737AE7007E4181 /* UserDataCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B35C526737AE7007E4181 /* UserDataCheckViewController.swift */; };
+		7AF54708267331AB003EDEC8 /* SignUpSignInHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF54707267331AB003EDEC8 /* SignUpSignInHTTPService.swift */; };
+		7AF5470B267331FE003EDEC8 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF5470A267331FE003EDEC8 /* AlertService.swift */; };
+		7AF5470E26733DB9003EDEC8 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF5470D26733DB9003EDEC8 /* URLRequest+Extension.swift */; };
 		9FAF9B7B7D5DFB529BDAAEE8 /* Pods_sparta42_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83317B442193652A0238AB0D /* Pods_sparta42_iOS.framework */; };
 		E99A7A7C3060028F94F35125 /* Pods_sparta42_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122799C29213479517276F0D /* Pods_sparta42_iOSTests.framework */; };
 /* End PBXBuildFile section */
@@ -65,8 +71,14 @@
 		7A7EAD4C266F43F90087DC28 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		7A7EAD4E266F44E20087DC28 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7A7EAD50266FB0C80087DC28 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		7A7EAD53266FB2F70087DC28 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		7A7EAD56266FBF6F0087DC28 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		7A8B35BF26734D2E007E4181 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		7A8B35C126735EF6007E4181 /* UserHTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHTTPService.swift; sourceTree = "<group>"; };
+		7A8B35C32673643F007E4181 /* SingletonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonService.swift; sourceTree = "<group>"; };
+		7A8B35C526737AE7007E4181 /* UserDataCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCheckViewController.swift; sourceTree = "<group>"; };
+		7AF54707267331AB003EDEC8 /* SignUpSignInHTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSignInHTTPService.swift; sourceTree = "<group>"; };
+		7AF5470A267331FE003EDEC8 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		7AF5470D26733DB9003EDEC8 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
 		83317B442193652A0238AB0D /* Pods_sparta42_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparta42_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55CDA7F8750754E8D4F969D /* Pods-sparta42_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOS.debug.xcconfig"; path = "Target Support Files/Pods-sparta42_iOS/Pods-sparta42_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B5FD8B3A581A2DCC930ABAFA /* Pods-sparta42_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-sparta42_iOSTests/Pods-sparta42_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,7 +161,9 @@
 		7A7EAD17266F419E0087DC28 /* sparta42_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7A7EAD52266FB2EF0087DC28 /* Service */,
+				7AF5470C26733DAB003EDEC8 /* Extensions */,
+				7AF5470626733184003EDEC8 /* Services */,
+				7AF5470526733109003EDEC8 /* ViewModels */,
 				7A7EAD49266F42160087DC28 /* Views */,
 				7A7EAD48266F41F70087DC28 /* Models */,
 				7A7EAD18266F419E0087DC28 /* AppDelegate.swift */,
@@ -195,16 +209,36 @@
 			children = (
 				7A7EAD4A266F422A0087DC28 /* SignUpViewController.swift */,
 				7A7EAD50266FB0C80087DC28 /* SignInViewController.swift */,
+				7A8B35C526737AE7007E4181 /* UserDataCheckViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		7A7EAD52266FB2EF0087DC28 /* Service */ = {
+		7AF5470526733109003EDEC8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				7A7EAD53266FB2F70087DC28 /* AlertService.swift */,
 			);
-			path = Service;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7AF5470626733184003EDEC8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7AF54707267331AB003EDEC8 /* SignUpSignInHTTPService.swift */,
+				7AF5470A267331FE003EDEC8 /* AlertService.swift */,
+				7A8B35C126735EF6007E4181 /* UserHTTPService.swift */,
+				7A8B35C32673643F007E4181 /* SingletonService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7AF5470C26733DAB003EDEC8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7AF5470D26733DB9003EDEC8 /* URLRequest+Extension.swift */,
+				7A8B35BF26734D2E007E4181 /* URL+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,13 +479,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8B35C626737AE7007E4181 /* UserDataCheckViewController.swift in Sources */,
+				7A8B35C026734D2E007E4181 /* URL+Extensions.swift in Sources */,
 				7A7EAD19266F419E0087DC28 /* AppDelegate.swift in Sources */,
+				7A8B35C42673643F007E4181 /* SingletonService.swift in Sources */,
 				7A7EAD4F266F44E20087DC28 /* User.swift in Sources */,
-				7A7EAD54266FB2F70087DC28 /* AlertService.swift in Sources */,
 				7A7EAD51266FB0C80087DC28 /* SignInViewController.swift in Sources */,
+				7AF5470B267331FE003EDEC8 /* AlertService.swift in Sources */,
 				7A7EAD1B266F419E0087DC28 /* SceneDelegate.swift in Sources */,
+				7AF5470E26733DB9003EDEC8 /* URLRequest+Extension.swift in Sources */,
 				7A7EAD4B266F422A0087DC28 /* SignUpViewController.swift in Sources */,
+				7A8B35C226735EF6007E4181 /* UserHTTPService.swift in Sources */,
 				7A7EAD57266FBF6F0087DC28 /* AuthResponse.swift in Sources */,
+				7AF54708267331AB003EDEC8 /* SignUpSignInHTTPService.swift in Sources */,
 				7A7EAD4D266F43F90087DC28 /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

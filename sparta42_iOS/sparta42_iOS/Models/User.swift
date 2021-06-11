@@ -15,3 +15,9 @@ struct UserMe: Codable {
     var provider: String?
     var providerId: String?
 }
+
+extension UserMe {
+    static var empty: UserMe {
+        return UserMe(email: "", id: 0, imageUrl: "", name: "", provider: "", providerId: "")
+    }
+}
