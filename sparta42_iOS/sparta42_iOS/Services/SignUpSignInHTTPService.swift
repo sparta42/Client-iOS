@@ -85,12 +85,10 @@ class SignService {
                 completion(true)
                 
                 } else {
-                
-                    if let e = error {
-                        NSLog("SignIn POST 과정에서 에러 발생: \(e)")
-                    }
                     return completion(false)
                 }
+            } else {
+                completion(false)
             }
         }
         task.resume()
