@@ -163,7 +163,6 @@
 			children = (
 				7AF5470C26733DAB003EDEC8 /* Extensions */,
 				7AF5470626733184003EDEC8 /* Services */,
-				7AF5470526733109003EDEC8 /* ViewModels */,
 				7A7EAD49266F42160087DC28 /* Views */,
 				7A7EAD48266F41F70087DC28 /* Models */,
 				7A7EAD18266F419E0087DC28 /* AppDelegate.swift */,
@@ -212,13 +211,6 @@
 				7A8B35C526737AE7007E4181 /* UserDataCheckViewController.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		7AF5470526733109003EDEC8 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		7AF5470626733184003EDEC8 /* Services */ = {
