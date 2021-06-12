@@ -33,7 +33,7 @@ extension URLRequest {
                 return URLSession.shared.rx.response(request: request)
             }.map { response, data -> T in
                 
-                if 200..<300 ~= response.statusCode {
+                if 200...399 ~= response.statusCode {
                     return try JSONDecoder().decode(T.self, from: data)
                 } else {
                     throw RxCocoaURLError.httpRequestFailed(response: response, data: data)

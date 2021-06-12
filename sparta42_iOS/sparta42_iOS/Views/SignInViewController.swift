@@ -45,10 +45,30 @@ class SignInViewController: UIViewController {
             return
         }
         
+        // post 요청과 동시에 에러 처리
         SignService.signInPOSTRequest(
             email: emailTextField.text,
-            password: passwordTextField.text,
-            VC: self)
+            password: passwordTextField.text) { result in
+            if (result == false) {
+                DispatchQueue.main.async {
+                    AlertService.justAlert(
+                        VC: self,
+                        title: "오류",
+                        message: "이메일이 올바른 형식이 아니거나, 가입되지 않은 계정입니다.",
+                        preferredStyle: .alert)
+                }
+            } else {
+                print("signIn success")
+                DispatchQueue.main.async {
+                    guard let nextViewController = self.storyboard?
+                        .instantiateViewController(withIdentifier: "UserDataCheckViewController")
+                    else {return}
+                    
+                    self.navigationController?
+                        .pushViewController(nextViewController, animated: true)
+                }
+            }
+        }
     }
 
     

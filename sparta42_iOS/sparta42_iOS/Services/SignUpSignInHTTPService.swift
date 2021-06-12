@@ -16,7 +16,7 @@ enum HTTPError: Error {
 }
 
 class SignService {
-    static func signUpPOSTRequest(name: String?, email: String?, password: String?, VC: UIViewController) {
+    static func signUpPOSTRequest(name: String?, email: String?, password: String?, completion: @escaping (Bool) -> Void) {
         
         let authSignUp = AuthSignUp(email: email, name: name, password: password)
         
@@ -35,27 +35,23 @@ class SignService {
             
             guard let response = response as? HTTPURLResponse
             else {return}
-            if 200..<300 ~= response.statusCode {
+            if 200...399 ~= response.statusCode {
                 print("signUp POST success")
+                return completion(true)
             } else {
-                DispatchQueue.main.async {
-                    AlertService.justAlert(
-                        VC: VC,
-                        title: "오류",
-                        message: "이메일이 올바른 형식이 아니거나, 이미 가입한 이메일입니다.",
-                        preferredStyle: .alert)
+                if let e = error {
+                    print(e.localizedDescription)
                 }
+                return completion(false)
             }
-            if let e = error {
-                NSLog("SignUp POST 과정에서 에러 발생: \(e)")
-            }
+            
         }
         task.resume()
         
         
     }
     
-    static func signInPOSTRequest(email: String?, password: String?, VC: UIViewController) {
+    static func signInPOSTRequest(email: String?, password: String?, completion: @escaping (Bool) -> Void) {
         
         let authSignIn = AuthSignIn(email: email, password: password)
         guard let signInData = try? JSONEncoder().encode(authSignIn)
@@ -75,37 +71,26 @@ class SignService {
             guard let httpResponse = response as? HTTPURLResponse
             else {return}
         
-            if 200..<300 ~= httpResponse.statusCode {
+            if 200...399 ~= httpResponse.statusCode {
                 print("signUp POST success")
-            } else {
-                DispatchQueue.main.async {
-                    AlertService.justAlert(
-                        VC: VC,
-                        title: "오류",
-                        message: "가입되어 있지 않은 아이디 또는 잘못된 비밀번호입니다.",
-                        preferredStyle: .alert)
-                }
-                return
-            }
-            
-            if let e = error {
-                NSLog("SignIn POST 과정에서 에러 발생: \(e)")
-                return
-            }
-            
-            if let data = data,
-               let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String : Any] {
-                guard let tokenType = json["tokenType"] as? String,
-                      let accessToken = json["accessToken"] as? String
-                else { return }
+                if let data = data,
+                   let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String : Any] {
+                    guard let tokenType = json["tokenType"] as? String,
+                          let accessToken = json["accessToken"] as? String
+                    else { return }
 
-                SingletonService.shared.accessToken = accessToken
-                SingletonService.shared.tokenType = tokenType
+                    SingletonService.shared.accessToken = accessToken
+                    SingletonService.shared.tokenType = tokenType
+                    
+                completion(true)
                 
-                DispatchQueue.main.async {
-                    NotificationCenter.default.post(name: Notification.Name("LoginSuccess"), object: nil)
+                } else {
+                
+                    if let e = error {
+                        NSLog("SignIn POST 과정에서 에러 발생: \(e)")
+                    }
+                    return completion(false)
                 }
-                
             }
         }
         task.resume()
