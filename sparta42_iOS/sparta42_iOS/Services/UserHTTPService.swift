@@ -20,14 +20,6 @@ class UserService {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         
-        
-        guard let tokenType = UserDefaults.shared.tokenType,
-              let accessToken = UserDefaults.shared.accessToken
-        else {return UserMe.empty}
-        
-        request.setValue("\(tokenType) \(accessToken)",
-                         forHTTPHeaderField: "Authorization")
-        
         let task = URLSession.shared.dataTask(with: request) {
             (data, response, error) in
             

@@ -72,17 +72,18 @@ class SignService {
             else {return}
         
             if 200...399 ~= httpResponse.statusCode {
-                print("signUp POST success")
+                print("SignIn POST success")
                 if let data = data,
                    let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String : Any] {
-                    guard let tokenType = json["tokenType"] as? String,
+                    guard let refreshToken = json["refreshToken"] as? String,
                           let accessToken = json["accessToken"] as? String
                     else { return }
 
-                    UserDefaults.shared.accessToken = accessToken
-                    UserDefaults.shared.tokenType = tokenType
-                    
-                completion(true)
+                    DispatchQueue.main.async {
+                        UserDefaults.standard.set("\(accessToken)", forKey: "accessToken")
+                        UserDefaults.standard.set("\(refreshToken)", forKey: "refreshToken")
+                    }
+                    completion(true)
                 
                 } else {
                     return completion(false)

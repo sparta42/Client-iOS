@@ -10,6 +10,7 @@ import Foundation
 
 // access 토큰 있나 체크하고
 class RefreshTokenService {
+
     
     static func checkAccessTokenAvailable(completion: @escaping (CommunicationResult) -> Void) {
         guard let url = URL.urlForUserMeGETRequest()
@@ -17,11 +18,13 @@ class RefreshTokenService {
         
         var request = URLRequest(url: url)
         
-        let tokenType = "get TokenType from Realm"
-        let accessToken = "get Access token from Realm"
-        
-            
-        request.setValue("\(tokenType) \(accessToken)", forHTTPHeaderField: "Authorization")
+        guard let accessToken = UserDefaults.standard.string(forKey: "accessToken")
+        else {
+            completion(CommunicationResult.FAILURE)
+            return
+        }
+
+        request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
         request.httpMethod = "GET"
         
         let task = URLSession.shared.dataTask(with: request) {
@@ -50,24 +53,42 @@ class RefreshTokenService {
     }
     
     static func updateTokens(completion: @escaping (Bool) -> Void) {
-        let refreshToken = "getRefreshTokenFromRealm"
-    
         guard let url = URL.urlForRefreshTokenPOSTRequest()
         else { fatalError("can't get url for refresh token") }
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         
-        request.setValue("\(UserDefaults.shared.tokenType ?? "Bearer") \(refreshToken)",
+        guard let refreshToken = UserDefaults.standard.string(forKey: "refreshToken")
+        else {
+            completion(false)
+            return
+        }
+        
+        request.setValue("Bearer \(refreshToken)",
                          forHTTPHeaderField: "Authorization")
-        let blankData = Data()
-        let task = URLSession.shared.uploadTask(with: request, from: blankData) { data, response, error in
+        
+        
+        let task = URLSession.shared.uploadTask(with: request, from: Data()) { data, response, error in
             
             guard let response = response as? HTTPURLResponse
             else { fatalError("can't get response from updateTokens post request") }
             
             if 200...399 ~= response.statusCode {
-                // realm에 accessToken, refreshToken, tokenType 저장.
+                if let data = data,
+                   let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                    guard let refreshTokenResponse =
+                            json["refreshToken"] as? String,
+                          let accessTokenResponse =
+                            json["accessToken"] as? String
+                    else {
+                        completion(false)
+                        return
+                    }
+                    
+                    UserDefaults.standard.set("\(accessTokenResponse)", forKey: "accessToken")
+                    UserDefaults.standard.set("\(refreshTokenResponse)", forKey: "refreshToken")
+                }
                 completion(true)
             } else {
                 completion(false)
