@@ -7,10 +7,15 @@
 
 import Foundation
 
-enum ErrorCodes: Int {
+enum ErrorCodes {
     
     case BAD_REQUEST
     case UNAUTHORIZED
     case FORBIDDEN
     case NOT_FOUND
+}
+
+enum CommunicationResult {
+    case SUCCESS
+    case FAILURE
 }
