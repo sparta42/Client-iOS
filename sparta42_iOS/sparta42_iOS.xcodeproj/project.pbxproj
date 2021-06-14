@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5CCDC1F718E62259DB163B69 /* Pods_sparta42_iOS_sparta42_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5FAC1D44BE00EF95FFE5D /* Pods_sparta42_iOS_sparta42_iOSUITests.framework */; };
+		7A3F654E267708AF005E8206 /* ErrorCodeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F654D267708AF005E8206 /* ErrorCodeEnum.swift */; };
 		7A7EAD19266F419E0087DC28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD18266F419E0087DC28 /* AppDelegate.swift */; };
 		7A7EAD1B266F419E0087DC28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD1A266F419E0087DC28 /* SceneDelegate.swift */; };
 		7A7EAD20266F419E0087DC28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7EAD1E266F419E0087DC28 /* Main.storyboard */; };
@@ -22,7 +23,7 @@
 		7A7EAD57266FBF6F0087DC28 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD56266FBF6F0087DC28 /* AuthResponse.swift */; };
 		7A8B35C026734D2E007E4181 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B35BF26734D2E007E4181 /* URL+Extensions.swift */; };
 		7A8B35C226735EF6007E4181 /* UserHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B35C126735EF6007E4181 /* UserHTTPService.swift */; };
-		7A8B35C42673643F007E4181 /* SingletonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B35C32673643F007E4181 /* SingletonService.swift */; };
+		7A8B35C42673643F007E4181 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B35C32673643F007E4181 /* UserDefaults.swift */; };
 		7A8B35C626737AE7007E4181 /* UserDataCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B35C526737AE7007E4181 /* UserDataCheckViewController.swift */; };
 		7AF54708267331AB003EDEC8 /* SignUpSignInHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF54707267331AB003EDEC8 /* SignUpSignInHTTPService.swift */; };
 		7AF5470B267331FE003EDEC8 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF5470A267331FE003EDEC8 /* AlertService.swift */; };
@@ -54,6 +55,7 @@
 		592DE4CEDFAA7A5E73BB6308 /* Pods-sparta42_iOS-sparta42_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOS-sparta42_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-sparta42_iOS-sparta42_iOSUITests/Pods-sparta42_iOS-sparta42_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A8872258B753843944CD050 /* Pods-sparta42_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-sparta42_iOSTests/Pods-sparta42_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		777453744C52B56F7593D809 /* Pods-sparta42_iOS-sparta42_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOS-sparta42_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-sparta42_iOS-sparta42_iOSUITests/Pods-sparta42_iOS-sparta42_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7A3F654D267708AF005E8206 /* ErrorCodeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCodeEnum.swift; sourceTree = "<group>"; };
 		7A7EAD15266F419E0087DC28 /* sparta42_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparta42_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7EAD18266F419E0087DC28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A7EAD1A266F419E0087DC28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +76,7 @@
 		7A7EAD56266FBF6F0087DC28 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		7A8B35BF26734D2E007E4181 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		7A8B35C126735EF6007E4181 /* UserHTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHTTPService.swift; sourceTree = "<group>"; };
-		7A8B35C32673643F007E4181 /* SingletonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonService.swift; sourceTree = "<group>"; };
+		7A8B35C32673643F007E4181 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		7A8B35C526737AE7007E4181 /* UserDataCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCheckViewController.swift; sourceTree = "<group>"; };
 		7AF54707267331AB003EDEC8 /* SignUpSignInHTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSignInHTTPService.swift; sourceTree = "<group>"; };
 		7AF5470A267331FE003EDEC8 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				7A7EAD4C266F43F90087DC28 /* Auth.swift */,
 				7A7EAD4E266F44E20087DC28 /* User.swift */,
 				7A7EAD56266FBF6F0087DC28 /* AuthResponse.swift */,
+				7A3F654D267708AF005E8206 /* ErrorCodeEnum.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,7 +222,7 @@
 				7AF54707267331AB003EDEC8 /* SignUpSignInHTTPService.swift */,
 				7AF5470A267331FE003EDEC8 /* AlertService.swift */,
 				7A8B35C126735EF6007E4181 /* UserHTTPService.swift */,
-				7A8B35C32673643F007E4181 /* SingletonService.swift */,
+				7A8B35C32673643F007E4181 /* UserDefaults.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -472,9 +475,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A8B35C626737AE7007E4181 /* UserDataCheckViewController.swift in Sources */,
+				7A3F654E267708AF005E8206 /* ErrorCodeEnum.swift in Sources */,
 				7A8B35C026734D2E007E4181 /* URL+Extensions.swift in Sources */,
 				7A7EAD19266F419E0087DC28 /* AppDelegate.swift in Sources */,
-				7A8B35C42673643F007E4181 /* SingletonService.swift in Sources */,
+				7A8B35C42673643F007E4181 /* UserDefaults.swift in Sources */,
 				7A7EAD4F266F44E20087DC28 /* User.swift in Sources */,
 				7A7EAD51266FB0C80087DC28 /* SignInViewController.swift in Sources */,
 				7AF5470B267331FE003EDEC8 /* AlertService.swift in Sources */,

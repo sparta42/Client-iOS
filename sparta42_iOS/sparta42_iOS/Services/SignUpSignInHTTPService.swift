@@ -79,8 +79,8 @@ class SignService {
                           let accessToken = json["accessToken"] as? String
                     else { return }
 
-                    SingletonService.shared.accessToken = accessToken
-                    SingletonService.shared.tokenType = tokenType
+                    UserDefaults.shared.accessToken = accessToken
+                    UserDefaults.shared.tokenType = tokenType
                     
                 completion(true)
                 
