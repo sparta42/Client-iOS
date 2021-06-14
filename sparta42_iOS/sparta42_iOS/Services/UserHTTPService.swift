@@ -21,8 +21,8 @@ class UserService {
         request.httpMethod = "GET"
         
         
-        guard let tokenType = SingletonService.shared.tokenType,
-              let accessToken = SingletonService.shared.accessToken
+        guard let tokenType = UserDefaults.shared.tokenType,
+              let accessToken = UserDefaults.shared.accessToken
         else {return UserMe.empty}
         
         request.setValue("\(tokenType) \(accessToken)",

@@ -23,8 +23,8 @@ extension URLRequest {
             .flatMap { url -> Observable<(response: HTTPURLResponse, data: Data)> in
                 
                 var request = URLRequest(url: url)
-                guard let tokenType = SingletonService.shared.tokenType,
-                      let accessToken = SingletonService.shared.accessToken
+                guard let tokenType = UserDefaults.shared.tokenType,
+                      let accessToken = UserDefaults.shared.accessToken
                 else { fatalError("there is no accessToken") }
                 request.setValue(
                     "\(tokenType) \(accessToken)",
