@@ -19,15 +19,23 @@ extension URLRequest {
  
     static func load<T: Decodable>(resource: Resource<T>) -> Observable<T> {
         
+        RefreshTokenService.checkAccessTokenAvailable { result in
+            if result == CommunicationResult.FAILURE {
+                // somecode to go back to login VC
+                print("can't get refreshToken. Going back to Login ViewController")
+            }
+        }
+        
         return Observable.just(resource.url)
             .flatMap { url -> Observable<(response: HTTPURLResponse, data: Data)> in
                 
                 var request = URLRequest(url: url)
-                guard let tokenType = UserDefaults.shared.tokenType,
-                      let accessToken = UserDefaults.shared.accessToken
-                else { fatalError("there is no accessToken") }
+                
+                guard let accessToken = UserDefaults.standard.string(forKey: "accessToken")
+                else { fatalError("There's no accessToken in UserDefaults") }
+
                 request.setValue(
-                    "\(tokenType) \(accessToken)",
+                    "Bearer \(accessToken)",
                     forHTTPHeaderField: "Authorization")
                 
                 return URLSession.shared.rx.response(request: request)

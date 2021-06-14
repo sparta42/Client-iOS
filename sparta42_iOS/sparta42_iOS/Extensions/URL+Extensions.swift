@@ -20,4 +20,8 @@ extension URL {
     static func urlForUserMeGETRequest() -> URL? {
         return URL(string: "http://3.35.151.102:8080/user/me")
     }
+    
+    static func urlForRefreshTokenPOSTRequest() -> URL? {
+        return URL(string: "http://3.35.151.102:8080/auth/refreshtoken")
+    }
 }
