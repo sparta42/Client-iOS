@@ -82,6 +82,7 @@ class SignService {
                     DispatchQueue.main.async {
                         UserDefaults.standard.set("\(accessToken)", forKey: "accessToken")
                         UserDefaults.standard.set("\(refreshToken)", forKey: "refreshToken")
+                        UserService.shared.setUserDefaults()
                     }
                     completion(true)
                 

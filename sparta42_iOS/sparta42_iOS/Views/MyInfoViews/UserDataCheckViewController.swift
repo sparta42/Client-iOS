@@ -35,7 +35,7 @@ class UserDataCheckViewController: UIViewController {
         
         userMe.map { userData in
             guard let name = userData.name
-            else { return "name 얻기 실패" }
+            else { return "로그인을 해주세요" }
             return name
         }
         .drive(self.nameLabel.rx.text)
