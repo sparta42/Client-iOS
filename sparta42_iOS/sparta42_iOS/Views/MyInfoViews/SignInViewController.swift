@@ -62,6 +62,9 @@ class SignInViewController: UIViewController {
                 if let url = URL.urlForUserMeGETRequest() {
                     let resource = Resource<UserMe>(url: url)
                     URLRequest.load(resource: resource)
+                    DispatchQueue.main.async {
+                        self.navigationController?.popViewController(animated: true)
+                    }
                 }
             
                 

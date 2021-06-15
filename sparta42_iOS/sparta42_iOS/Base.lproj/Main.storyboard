@@ -302,31 +302,33 @@
             </objects>
             <point key="canvasLocation" x="79.710144927536234" y="99.776785714285708"/>
         </scene>
-        <!--User Data Check View Controller-->
+        <!--Main Map View Controller-->
         <scene sceneID="esq-jC-f6n">
             <objects>
-                <viewController storyboardIdentifier="UserDataCheckViewController" id="L8V-Ph-602" customClass="UserDataCheckViewController" customModule="sparta42_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eg0-SB-ojA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="UserDataCheckViewController" id="L8V-Ph-602" customClass="MainMapViewController" customModule="sparta42_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s2X-gX-4Jm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILd-8O-9U8">
-                                <rect key="frame" x="149" y="202" width="104" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="il3-IF-Sh2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rVR-qk-OV6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="il3-IF-Sh2" firstAttribute="top" secondItem="rVR-qk-OV6" secondAttribute="top" id="G2N-iA-db2"/>
+                            <constraint firstItem="rVR-qk-OV6" firstAttribute="trailing" secondItem="il3-IF-Sh2" secondAttribute="trailing" id="WF7-Id-R8C"/>
+                            <constraint firstItem="il3-IF-Sh2" firstAttribute="leading" secondItem="rVR-qk-OV6" secondAttribute="leading" id="Zku-wS-Vjm"/>
+                            <constraint firstItem="rVR-qk-OV6" firstAttribute="bottom" secondItem="il3-IF-Sh2" secondAttribute="bottom" id="vpC-TJ-51n"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Is9-p6-hl5"/>
                     <connections>
-                        <outlet property="nameLabel" destination="ILd-8O-9U8" id="3F4-gD-IlF"/>
+                        <outlet property="mapKitView" destination="il3-IF-Sh2" id="bSu-GA-mr3"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Eg0-SB-ojA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="990" y="-927"/>
         </scene>
