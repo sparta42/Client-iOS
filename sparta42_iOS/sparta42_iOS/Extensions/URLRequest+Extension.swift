@@ -32,7 +32,9 @@ extension URLRequest {
                 var request = URLRequest(url: url)
                 
                 guard let accessToken = UserDefaults.standard.string(forKey: "accessToken")
-                else { fatalError("There's no accessToken in UserDefaults") }
+                else { throw RxCocoaURLError.httpRequestFailed(response: HTTPURLResponse.init() , data: nil)
+                    
+                }
 
                 request.setValue(
                     "Bearer \(accessToken)",

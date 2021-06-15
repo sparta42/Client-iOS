@@ -59,13 +59,20 @@ class SignInViewController: UIViewController {
                 }
             } else {
                 print("signIn success")
+                if let url = URL.urlForUserMeGETRequest() {
+                    let resource = Resource<UserMe>(url: url)
+                    URLRequest.load(resource: resource)
+                }
+            
+                
                 DispatchQueue.main.async {
-                    guard let nextViewController = self.storyboard?
-                        .instantiateViewController(withIdentifier: "UserDataCheckViewController")
-                    else {return}
                     
-                    self.navigationController?
-                        .pushViewController(nextViewController, animated: true)
+//                    guard let nextViewController = self.storyboard?
+//                        .instantiateViewController(withIdentifier: "UserDataCheckViewController")
+//                    else {return}
+//
+//                    self.navigationController?
+//                        .pushViewController(nextViewController, animated: true)
                 }
             }
         }
