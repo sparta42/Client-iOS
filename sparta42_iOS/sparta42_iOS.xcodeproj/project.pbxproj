@@ -12,6 +12,8 @@
 		7A3F655026771E6D005E8206 /* RefreshTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F654F26771E6D005E8206 /* RefreshTokenService.swift */; };
 		7A3F655426785F87005E8206 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F655326785F87005E8206 /* UserInfoViewController.swift */; };
 		7A3F655826788513005E8206 /* MainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F655726788513005E8206 /* MainMapViewController.swift */; };
+		7A771C00267B532F00802A3B /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A771BFF267B532F00802A3B /* Friends.swift */; };
+		7A771C02267B915B00802A3B /* FriendAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A771C01267B915B00802A3B /* FriendAnnotation.swift */; };
 		7A7EAD19266F419E0087DC28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD18266F419E0087DC28 /* AppDelegate.swift */; };
 		7A7EAD1B266F419E0087DC28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EAD1A266F419E0087DC28 /* SceneDelegate.swift */; };
 		7A7EAD20266F419E0087DC28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7EAD1E266F419E0087DC28 /* Main.storyboard */; };
@@ -61,6 +63,8 @@
 		7A3F654F26771E6D005E8206 /* RefreshTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenService.swift; sourceTree = "<group>"; };
 		7A3F655326785F87005E8206 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		7A3F655726788513005E8206 /* MainMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViewController.swift; sourceTree = "<group>"; };
+		7A771BFF267B532F00802A3B /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		7A771C01267B915B00802A3B /* FriendAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendAnnotation.swift; sourceTree = "<group>"; };
 		7A7EAD15266F419E0087DC28 /* sparta42_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparta42_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7EAD18266F419E0087DC28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A7EAD1A266F419E0087DC28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 				7A7EAD4E266F44E20087DC28 /* User.swift */,
 				7A7EAD56266FBF6F0087DC28 /* AuthResponse.swift */,
 				7A3F654D267708AF005E8206 /* Enums.swift */,
+				7A771BFF267B532F00802A3B /* Friends.swift */,
+				7A771C01267B915B00802A3B /* FriendAnnotation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 				TargetAttributes = {
 					7A7EAD14266F419D0087DC28 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					7A7EAD2A266F419F0087DC28 = {
 						CreatedOnToolsVersion = 12.5;
@@ -500,6 +507,7 @@
 				7A3F655426785F87005E8206 /* UserInfoViewController.swift in Sources */,
 				7A3F654E267708AF005E8206 /* Enums.swift in Sources */,
 				7A8B35C026734D2E007E4181 /* URL+Extensions.swift in Sources */,
+				7A771C02267B915B00802A3B /* FriendAnnotation.swift in Sources */,
 				7A7EAD19266F419E0087DC28 /* AppDelegate.swift in Sources */,
 				7A3F655026771E6D005E8206 /* RefreshTokenService.swift in Sources */,
 				7A7EAD4F266F44E20087DC28 /* User.swift in Sources */,
@@ -509,6 +517,7 @@
 				7A7EAD1B266F419E0087DC28 /* SceneDelegate.swift in Sources */,
 				7AF5470E26733DB9003EDEC8 /* URLRequest+Extension.swift in Sources */,
 				7A7EAD4B266F422A0087DC28 /* SignUpViewController.swift in Sources */,
+				7A771C00267B532F00802A3B /* Friends.swift in Sources */,
 				7A8B35C226735EF6007E4181 /* UserService.swift in Sources */,
 				7A7EAD57266FBF6F0087DC28 /* AuthResponse.swift in Sources */,
 				7AF54708267331AB003EDEC8 /* SignUpSignInHTTPService.swift in Sources */,
@@ -689,6 +698,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VWY286867X;
 				INFOPLIST_FILE = sparta42_iOS/Info.plist;
@@ -698,6 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kchoi.sparta42-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -709,6 +720,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VWY286867X;
 				INFOPLIST_FILE = sparta42_iOS/Info.plist;
