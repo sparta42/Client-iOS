@@ -13,3 +13,4 @@ class FriendAnnotation: MKPointAnnotation {
     var reuseIdentifier: String?
 
 }
+

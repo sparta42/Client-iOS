@@ -12,7 +12,15 @@ struct Friends: Codable {
 }
 
 struct Friend: Codable {
+    var id: Int
     var latitude: Double
-    var longtitude: Double
-    var imageUrl: String
+    var longitude: Double
+    var imageUrl: String?
+    var title: String?
+    var subtitle: String?
+}
+
+
+struct FriendsList: Codable {
+    var friends: [Friend]
 }

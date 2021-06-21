@@ -21,6 +21,10 @@ class MainMapViewController: UIViewController {
         return manager
     }()
     
+    lazy var httpClient: HTTPClient = {
+        let client = HTTPClient(baseUrl: " https://sparta42be.s3.ap-northeast-2.amazonaws.com/friends.json")
+        return client
+    }()
     
     
     
@@ -50,7 +54,7 @@ class MainMapViewController: UIViewController {
         self.mapKitView.setUserTrackingMode(.follow, animated: true)
         self.mapKitView.delegate = self
     
-        let span = MKCoordinateSpan(latitudeDelta: 0.0001, longitudeDelta: 0.0001)
+        let span = MKCoordinateSpan(latitudeDelta: 0.001, longitudeDelta: 0.001)
         let region = MKCoordinateRegion(center: self.mapKitView.centerCoordinate, span: span)
         self.mapKitView.setRegion(region, animated: true)
         
@@ -64,13 +68,31 @@ class MainMapViewController: UIViewController {
 extension MainMapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-    
+        let span = mapKitView.region.span
+        let center = mapKitView.region.center
         
+        let farSouth = CLLocation(latitude: center.latitude - span.latitudeDelta * 0.5, longitude: center.longitude)
+        let farNorth = CLLocation(latitude: center.latitude + span.latitudeDelta * 0.5, longitude: center.longitude)
+        let farEast = CLLocation(latitude: center.latitude, longitude: center.longitude + span.longitudeDelta * 0.5)
+        let farWest = CLLocation(latitude: center.latitude, longitude: center.longitude + span.longitudeDelta * 0.5)
+        
+        let minimumLatitude: Double = farSouth.coordinate.latitude
+        let maximumLatitude: Double = farNorth.coordinate.latitude
+        let minimumlongtitude: Double = farWest.coordinate.longitude
+        let maximumLongitude: Double = farEast.coordinate.longitude
+            
+        print ("minimumLatitude: \(minimumLatitude)")
+        print ("maximumLatitude: \(maximumLatitude)")
+        print ("minimumLongitude: \(minimumlongtitude)")
+        print ("maximumLongitude: \(maximumLongitude)")
+        
+        
+        showFriendsOnMap()
         
     }
     
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        switch manager.authorizationStatus {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status {
         case .authorizedAlways, .authorizedWhenInUse:
             print("GPS 권한 설정 됨")
         case .restricted, .notDetermined, .denied:
@@ -81,25 +103,37 @@ extension MainMapViewController: CLLocationManagerDelegate {
         default:
             print("GPS Default")
         }
-        
     }
     
     func showFriendsOnMap() {
         
-        let points = [CLLocationCoordinate2D(latitude: 37.488588, longitude: 127.066856), CLLocationCoordinate2D(latitude: 37.487703, longitude: 127.067071)]
-        let titles = ["kchoi", "nakim"]
-        let imageUrls = ["https://user-images.githubusercontent.com/41955126/122517706-54dfa680-d04b-11eb-8c73-868f5acb53db.png","https://user-images.githubusercontent.com/41955126/122518736-8c9b1e00-d04c-11eb-9d18-d6e4390ab425.png"]
-        
-        for i in points.indices {
-            let friendAnnotation = FriendAnnotation()
-            friendAnnotation.coordinate = points[i]
-            friendAnnotation.title = titles[i]
-            friendAnnotation.imageName = imageUrls[i]
-            friendAnnotation.reuseIdentifier = titles[i]
-            self.mapKitView.addAnnotation(friendAnnotation)
+        httpClient.getJson(
+            path:"https://raw.githubusercontent.com/ChoiKanghun/images/master/friends.json",
+            params: ["email": "nil"]) { result in
+            if let json = try? result.get(),
+               let data = json.data(using: .utf8) {
+                if let friendsList =  try? JSONDecoder().decode(FriendsList.self, from: data) {
+                    
+                    for i in friendsList.friends.indices {
+                        let friend = friendsList.friends[i]
+                        let friendAnnotation = FriendAnnotation()
+                        let cooridinate = CLLocationCoordinate2D(latitude: friend.latitude, longitude: friend.longitude)
+                        friendAnnotation.coordinate = cooridinate
+                        friendAnnotation.title = friend.title
+                        friendAnnotation.imageName = friend.imageUrl
+                        friendAnnotation.reuseIdentifier = String(friend.id)
+                        self.mapKitView.addAnnotation(friendAnnotation)
+                    }
+                    
+                }
+                else {
+                    print("can't decode friendsList")
+                }
+            }
+            else {
+                print("can't convert json")
+            }
         }
-        
-
     }
     
     
@@ -124,39 +158,14 @@ extension MainMapViewController: MKMapViewDelegate {
         else {
             friendMapView!.annotation = annotation
         }
-        let url = URL(string: annotation.imageName!)
-        let data = try? Data(contentsOf: url!)
-        let image = UIImage(data: data!)
-        friendMapView?.image = image
+        ImageLoader.load64pxImage(url: annotation.imageName!) { image in
+            friendMapView?.image = image
+        }
+        
+        
         
         return friendMapView
     }
     
-//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//        guard !annotation.isKind(of: MKUserLocation.self)
-//        else {
-//            print("is MKUserLocation")
-//            return nil }
-//
-//        var annotationView: MKAnnotationView?
-//
-//        let friendAnnotation = annotation as? FriendAnnotation
-//        annotationView = setupFriendAnnotationView(for: friendAnnotation!, on: self.mapKitView)
-//
-//        return annotationView
-//    }
-//
-//
-//    func setupFriendAnnotationView(for annotation: FriendAnnotation, on mapView: MKMapView) -> MKAnnotationView {
-//        let reuseIdentifier = "test"
-//        let friendAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
-//
-//
-//        let url = URL(string: annotation.imageUrl!)
-//        let data = try? Data(contentsOf: url!)
-//        let userProfileImage = UIImage(data: data!)
-//        friendAnnotationView!.image = userProfileImage
-//
-//        return friendAnnotationView!
-//    }
+
 }

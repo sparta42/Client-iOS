@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5CCDC1F718E62259DB163B69 /* Pods_sparta42_iOS_sparta42_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5FAC1D44BE00EF95FFE5D /* Pods_sparta42_iOS_sparta42_iOSUITests.framework */; };
+		7A2A3F63268053370013177E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A3F62268053370013177E /* ImageLoader.swift */; };
+		7A2A3F652680540E0013177E /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A3F642680540E0013177E /* UIImage+Extensions.swift */; };
+		7A2A3F67268057580013177E /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A3F66268057580013177E /* HttpClient.swift */; };
 		7A3F654E267708AF005E8206 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F654D267708AF005E8206 /* Enums.swift */; };
 		7A3F655026771E6D005E8206 /* RefreshTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F654F26771E6D005E8206 /* RefreshTokenService.swift */; };
 		7A3F655426785F87005E8206 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F655326785F87005E8206 /* UserInfoViewController.swift */; };
@@ -59,6 +62,9 @@
 		592DE4CEDFAA7A5E73BB6308 /* Pods-sparta42_iOS-sparta42_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOS-sparta42_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-sparta42_iOS-sparta42_iOSUITests/Pods-sparta42_iOS-sparta42_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A8872258B753843944CD050 /* Pods-sparta42_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-sparta42_iOSTests/Pods-sparta42_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		777453744C52B56F7593D809 /* Pods-sparta42_iOS-sparta42_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparta42_iOS-sparta42_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-sparta42_iOS-sparta42_iOSUITests/Pods-sparta42_iOS-sparta42_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7A2A3F62268053370013177E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		7A2A3F642680540E0013177E /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		7A2A3F66268057580013177E /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		7A3F654D267708AF005E8206 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		7A3F654F26771E6D005E8206 /* RefreshTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenService.swift; sourceTree = "<group>"; };
 		7A3F655326785F87005E8206 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +152,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7A2A3F61268053250013177E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7A2A3F62268053370013177E /* ImageLoader.swift */,
+				7A2A3F66268057580013177E /* HttpClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		7A3F6555267884BB005E8206 /* MyInfoViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +205,7 @@
 		7A7EAD17266F419E0087DC28 /* sparta42_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7A2A3F61268053250013177E /* Network */,
 				7AF5470C26733DAB003EDEC8 /* Extensions */,
 				7AF5470626733184003EDEC8 /* Services */,
 				7A7EAD49266F42160087DC28 /* Views */,
@@ -260,6 +276,7 @@
 			children = (
 				7AF5470D26733DB9003EDEC8 /* URLRequest+Extension.swift */,
 				7A8B35BF26734D2E007E4181 /* URL+Extensions.swift */,
+				7A2A3F642680540E0013177E /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -506,12 +523,14 @@
 				7A8B35C626737AE7007E4181 /* UserDataCheckViewController.swift in Sources */,
 				7A3F655426785F87005E8206 /* UserInfoViewController.swift in Sources */,
 				7A3F654E267708AF005E8206 /* Enums.swift in Sources */,
+				7A2A3F652680540E0013177E /* UIImage+Extensions.swift in Sources */,
 				7A8B35C026734D2E007E4181 /* URL+Extensions.swift in Sources */,
 				7A771C02267B915B00802A3B /* FriendAnnotation.swift in Sources */,
 				7A7EAD19266F419E0087DC28 /* AppDelegate.swift in Sources */,
 				7A3F655026771E6D005E8206 /* RefreshTokenService.swift in Sources */,
 				7A7EAD4F266F44E20087DC28 /* User.swift in Sources */,
 				7A7EAD51266FB0C80087DC28 /* SignInViewController.swift in Sources */,
+				7A2A3F63268053370013177E /* ImageLoader.swift in Sources */,
 				7A3F655826788513005E8206 /* MainMapViewController.swift in Sources */,
 				7AF5470B267331FE003EDEC8 /* AlertService.swift in Sources */,
 				7A7EAD1B266F419E0087DC28 /* SceneDelegate.swift in Sources */,
@@ -519,6 +538,7 @@
 				7A7EAD4B266F422A0087DC28 /* SignUpViewController.swift in Sources */,
 				7A771C00267B532F00802A3B /* Friends.swift in Sources */,
 				7A8B35C226735EF6007E4181 /* UserService.swift in Sources */,
+				7A2A3F67268057580013177E /* HttpClient.swift in Sources */,
 				7A7EAD57266FBF6F0087DC28 /* AuthResponse.swift in Sources */,
 				7AF54708267331AB003EDEC8 /* SignUpSignInHTTPService.swift in Sources */,
 				7A7EAD4D266F43F90087DC28 /* Auth.swift in Sources */,
@@ -627,7 +647,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -682,7 +702,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
